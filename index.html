@@ -1,433 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<title>Sunderasen Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-	<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-
-
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="description" content="Sunderasen — Cloud Operations Engineer with experience in large-scale Linux infrastructure, AWS, Amazon EKS, Docker, GitHub Actions, Nginx, SonarQube, Prometheus and Grafana.">
+  <meta name="theme-color" content="#0a0d0c"><title>Sunderasen | Cloud Operations · SRE · DevOps</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('sunderasen-theme')||((matchMedia('(prefers-color-scheme:light)').matches)?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+  <style>
+:root{--bg:#0a0d0c;--surface:#111614;--surface2:#171d1a;--line:#28322d;--text:#f1f5ef;--muted:#a4b0a8;--accent:#b9f769;--teal:#6fe6c1;--max:1220px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;color:var(--text);background:radial-gradient(circle at 80% 8%,rgba(111,230,193,.08),transparent 24rem),radial-gradient(circle at 12% 33%,rgba(185,247,105,.055),transparent 24rem),var(--bg);font:15px/1.7 Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}::selection{color:#071009;background:var(--accent)}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.container{width:min(var(--max),calc(100% - 48px));margin:auto}.eyebrow{color:var(--accent);font:700 11px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.17em;text-transform:uppercase}.nav-shell{position:sticky;top:0;z-index:30;background:rgba(10,13,12,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(40,50,45,.85)}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:20px;font-weight:780;letter-spacing:-.06em}.brand i{color:var(--accent);font-style:normal}.nav-links{display:flex;align-items:center;gap:28px;font-size:12px}.nav-links a{color:var(--muted);transition:color .2s}.nav-links a:hover{color:var(--text)}.nav-cta{padding:9px 14px;color:#10170c!important;background:var(--accent);border-radius:5px;font-weight:750}.menu{display:none;border:0;color:var(--text);background:none;padding:8px}.hero{min-height:calc(100svh - 78px);display:grid;grid-template-columns:1.35fr .9fr;gap:72px;align-items:center;padding:85px 0 70px}.status{display:inline-flex;align-items:center;gap:10px;padding:7px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font:10px/1.2 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(185,247,105,.09)}h1{margin:28px 0 24px;max-width:850px;font-size:clamp(56px,7.2vw,104px);font-weight:540;line-height:.96;letter-spacing:-.065em}h1 span{color:var(--accent)}.hero-copy{max-width:610px;color:var(--muted);font-size:18px}.hero-actions{display:flex;gap:13px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:0 19px;border:1px solid var(--line);border-radius:5px;font-size:12px;font-weight:700;transition:transform .2s,border-color .2s}.btn:hover{transform:translateY(-2px);border-color:#536158}.btn.primary{color:#0b1409;background:var(--accent);border-color:var(--accent)}.ops-console{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#172019,#0d1210);box-shadow:0 30px 70px rgba(0,0,0,.28)}.console-bar{display:flex;align-items:center;gap:7px;padding:14px 17px;border-bottom:1px solid var(--line);color:var(--muted);font:9px ui-monospace,monospace}.console-dot{width:7px;height:7px;border-radius:50%;background:#536159}.console-title{margin-left:auto;letter-spacing:.12em}.console-body{padding:27px 26px 30px;font:12px/1.9 ui-monospace,monospace}.muted{color:#7e8d84}.green{color:var(--accent)}.teal{color:var(--teal)}.console-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:23px}.console-stat{padding:16px;border:1px solid var(--line);border-radius:7px;background:rgba(255,255,255,.018)}.console-stat strong{display:block;font-size:19px;font-weight:560}.console-stat span{color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.1em}.proof-strip{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}.proof{padding:24px 22px;border-right:1px solid var(--line)}.proof:last-child{border:0}.proof strong{display:block;margin-bottom:4px;font-size:19px;font-weight:560}.proof span{color:var(--muted);font:9px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}section{padding:100px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr .72fr;gap:60px;align-items:end;margin-bottom:50px}h2{margin:12px 0 0;font-size:clamp(38px,4.8vw,66px);font-weight:520;line-height:1.06;letter-spacing:-.055em}.section-head p{margin:0;color:var(--muted);font-size:14px}.spotlight{display:grid;grid-template-columns:.72fr 1.28fr;overflow:hidden;border:1px solid var(--line);border-radius:11px;background:var(--surface)}.spotlight-side{padding:42px;border-right:1px solid var(--line);background:linear-gradient(155deg,rgba(185,247,105,.08),transparent 60%)}.company{margin-top:10px;color:var(--accent);font-size:15px}.date{margin-top:26px;color:var(--muted);font:10px ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}h3{margin:10px 0;font-size:24px;font-weight:560;line-height:1.25;letter-spacing:-.025em}.spotlight-main{padding:42px}.spotlight-main>p,.timeline-body p{margin-top:0;color:var(--muted)}.responsibilities{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:28px}.responsibility{padding:18px;border:1px solid var(--line);border-radius:7px;background:var(--surface2)}.responsibility b{display:block;margin-bottom:6px;font-size:13px}.responsibility p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}.timeline-item{display:grid;grid-template-columns:.72fr 1.28fr;padding-top:36px;margin-top:22px;border-top:1px solid var(--line)}.timeline-meta{color:var(--muted);font:10px ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}.tool-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}.tool-list span{padding:5px 9px;border:1px solid var(--line);border-radius:4px;color:#c6d0c9;font:9px ui-monospace,monospace}.depth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.depth-card{position:relative;min-height:265px;padding:28px;overflow:hidden;border:1px solid var(--line);border-radius:9px;background:var(--surface)}.depth-card:after{content:"";position:absolute;right:-60px;bottom:-70px;width:150px;height:150px;border:1px solid rgba(185,247,105,.16);border-radius:50%}.num{color:var(--accent);font:10px ui-monospace,monospace}.depth-card p,.incident-card p,.platform-copy p{color:var(--muted);font-size:13px}.incident{display:grid;grid-template-columns:1fr 1fr;gap:18px}.incident-card{padding:34px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.incident-card.featured{background:linear-gradient(145deg,rgba(185,247,105,.1),var(--surface) 55%)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:28px}.flow div{padding:14px 8px;border:1px solid var(--line);border-radius:5px;text-align:center;color:var(--muted);font:9px ui-monospace,monospace;text-transform:uppercase}.flow div:after{content:"→";float:right;color:var(--accent);transform:translateX(13px)}.flow div:last-child:after{display:none}.platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.platform{display:grid;grid-template-columns:.7fr 1.3fr;min-height:300px;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.platform-visual{display:grid;place-items:center;padding:20px;border-right:1px solid var(--line);background:repeating-linear-gradient(0deg,transparent 0 27px,rgba(185,247,105,.04) 28px)}.cluster{display:grid;grid-template-columns:repeat(2,58px);gap:12px;transform:rotate(-4deg)}.node{display:grid;place-items:center;height:58px;border:1px solid #5d744b;border-radius:9px;color:var(--accent);background:#111810;font:9px ui-monospace,monospace;box-shadow:5px 5px 0 #080b09}.platform-copy{padding:31px}.platform-copy ul{padding-left:17px;color:var(--muted);font-size:12px}.confidence{display:inline-block;margin-bottom:12px;padding:5px 8px;border:1px solid var(--line);border-radius:4px;color:var(--accent);font:8px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about-copy>p{margin-top:0;color:var(--muted);font-size:16px}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:29px}.principle{padding-top:15px;border-top:2px solid var(--accent)}.principle b{font-size:12px}.principle p{margin:4px 0;color:var(--muted);font-size:11px}.education{margin-top:32px;padding:20px;border-left:2px solid var(--accent);background:var(--surface)}.education span{color:var(--muted);font-size:12px}.contact{padding:105px 0;text-align:center}.contact h2{max-width:850px;margin:18px auto 22px}.contact p{color:var(--muted)}.contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:31px 0 19px}.email-link{color:var(--accent);font:12px ui-monospace,monospace}footer{display:flex;justify-content:space-between;padding:25px 0;color:var(--muted);font:9px ui-monospace,monospace;letter-spacing:.08em}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}@media(max-width:940px){.hero{grid-template-columns:1fr;min-height:auto}.proof-strip{grid-template-columns:repeat(2,1fr)}.proof:nth-child(2){border-right:0}.proof:nth-child(-n+2){border-bottom:1px solid var(--line)}.depth-grid{grid-template-columns:repeat(2,1fr)}.depth-card:last-child{grid-column:1/-1}.platforms{grid-template-columns:1fr}}@media(max-width:700px){.container{width:min(100% - 34px,var(--max))}nav{height:68px}.menu{display:block}.nav-links{display:none;position:absolute;top:68px;left:17px;right:17px;padding:18px;flex-direction:column;align-items:stretch;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.nav-links.open{display:flex}.hero{padding:62px 0 55px;gap:43px}h1{font-size:clamp(50px,15vw,72px)}.hero-copy{font-size:16px}.hero-actions{align-items:stretch;flex-direction:column}.section-head,.spotlight,.timeline-item,.about{grid-template-columns:1fr;gap:22px}section{padding:72px 0}.spotlight-side{border-right:0;border-bottom:1px solid var(--line)}.spotlight-side,.spotlight-main{padding:27px}.responsibilities,.depth-grid,.incident,.principles{grid-template-columns:1fr}.depth-card:last-child{grid-column:auto}.flow{grid-template-columns:repeat(2,1fr)}.flow div:nth-child(2):after{display:none}.platform{grid-template-columns:1fr}.platform-visual{min-height:185px;border-right:0;border-bottom:1px solid var(--line)}footer{gap:20px}}
+/* Theme and recruiter-action enhancements */
+:root{--nav-bg:rgba(10,13,12,.82);--console-a:#172019;--console-b:#0d1210;--chip:rgba(255,255,255,.018);--node:#111810;--node-shadow:#080b09;--accent-ink:#0b1409;color-scheme:dark}
+html[data-theme="light"]{--bg:#f7f8f5;--surface:#fff;--surface2:#f1f4ef;--line:#d6ddd6;--text:#142019;--muted:#5b6860;--accent:#32751f;--teal:#087565;--nav-bg:rgba(247,248,245,.9);--console-a:#fff;--console-b:#f1f5f0;--chip:rgba(50,117,31,.055);--node:#f1f5ef;--node-shadow:#d4ddd3;--accent-ink:#fff;color-scheme:light}
+body{background:radial-gradient(circle at 80% 8%,color-mix(in srgb,var(--teal) 7%,transparent),transparent 24rem),radial-gradient(circle at 12% 33%,color-mix(in srgb,var(--accent) 6%,transparent),transparent 24rem),var(--bg);transition:background-color .25s,color .25s}.nav-shell{background:var(--nav-bg);border-bottom-color:var(--line)}.nav-links{gap:24px}.nav-cta,.btn.primary{color:var(--accent-ink)!important}.theme-toggle{display:grid;place-items:center;width:38px;height:38px;padding:0;border:1px solid var(--line);border-radius:6px;color:var(--text);background:var(--surface);cursor:pointer;transition:transform .2s,border-color .2s}.theme-toggle:hover{transform:translateY(-2px);border-color:var(--accent)}.theme-toggle .sun{display:none}html[data-theme="light"] .theme-toggle .sun{display:inline}html[data-theme="light"] .theme-toggle .moon{display:none}.hero-actions{flex-wrap:wrap}.btn:hover{border-color:var(--accent)}.ops-console{background:linear-gradient(145deg,var(--console-a),var(--console-b));box-shadow:0 30px 70px rgba(0,0,0,.16)}.muted{color:var(--muted)}.console-stat{background:var(--chip)}.console-stat strong{font-weight:650}.node{background:var(--node);box-shadow:5px 5px 0 var(--node-shadow)}.tool-list span{color:var(--text)}
+html[data-theme="light"] .ops-console{box-shadow:0 24px 55px rgba(34,51,40,.1)}html[data-theme="light"] .spotlight-side{background:linear-gradient(155deg,rgba(50,117,31,.08),transparent 65%)}html[data-theme="light"] .incident-card.featured{background:linear-gradient(145deg,rgba(50,117,31,.075),var(--surface) 58%)}html[data-theme="light"] .platform-visual{background:repeating-linear-gradient(0deg,transparent 0 27px,rgba(50,117,31,.055) 28px)}html[data-theme="light"] .depth-card:after{border-color:rgba(50,117,31,.14)}html[data-theme="light"] .pulse{box-shadow:0 0 0 5px rgba(50,117,31,.1)}html[data-theme="light"] section{border-bottom-color:#dde3dd}
+@media(max-width:700px){.theme-toggle{width:100%;height:42px}}
+  </style>
 </head>
-<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+<body>
+<header class="nav-shell"><nav class="container" aria-label="Primary navigation"><a class="brand" href="#top">sunderasen<i>.</i></a><button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button><div class="nav-links" id="navigation"><a href="#experience">Experience</a><a href="#expertise">Skills</a><a href="#incidents">Incident Management</a><a href="#about">About</a><a href="https://sunderasen.github.io/Sunderasen_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↓</a><a class="nav-cta" href="#contact">Contact ↗</a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme"><span class="moon" aria-hidden="true">☾</span><span class="sun" aria-hidden="true">☀</span></button></div></nav></header>
+<main id="top"><div class="container">
+<section class="hero">
+<div><div class="status"><span class="pulse"></span>Cloud Operations Engineer · Zoho</div><h1>Keeping systems <span>available</span> when it matters.</h1><p class="hero-copy">I’m Sunderasen, a Cloud Operations Engineer working across large-scale Linux infrastructure, production on-call, incident management, networking, load balancing, data services and disaster recovery.</p><div class="hero-actions"><a class="btn primary" href="#experience">See production experience ↗</a><a class="btn" href="https://sunderasen.github.io/Sunderasen_Resume.pdf" download="Sunderasen-Resume.pdf">Download Resume ↓</a><a class="btn" href="#contact">Contact me</a></div></div>
+<aside class="ops-console" aria-label="Cloud operations profile snapshot"><div class="console-bar"><span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span><span class="console-title">OPS PROFILE / LIVE</span></div><div class="console-body"><div><span class="muted">$</span> profile --current-role</div><div class="green">Cloud Operations Engineer @ Zoho</div><br><div><span class="muted">$</span> focus --production</div><div><span class="teal">on-call</span> · incident response · reliability · DevOps</div><div>Linux · Kubernetes · networking · System Design</div><br><div><span class="muted">$</span> objective --next-role</div><div class="green">SRE · DevOps · Platform Engineering</div><div class="console-grid"><div class="console-stat"><strong>20K+</strong><span>Prod servers</span></div><div class="console-stat"><strong>K8s</strong><span>Orchestration</span></div><div class="console-stat"><strong>AWS</strong><span>Cloud platform</span></div><div class="console-stat"><strong>200+</strong><span>Servers monitored</span></div></div></div></aside>
+</section>
+<div class="proof-strip reveal"><div class="proof"><strong>20,000+</strong><span>Linux servers operated</span></div><div class="proof"><strong>200+</strong><span>Servers monitored</span></div><div class="proof"><strong>80%</strong><span>Container-size reduction</span></div><div class="proof"><strong>AWS + EKS</strong><span>Cloud platform skills</span></div></div>
 
+<section id="experience"><div class="section-head reveal"><div><div class="eyebrow">01 / Experience</div><h2>Production depth,<br>not just tool names.</h2></div><p>My work sits where infrastructure, network traffic, databases and incidents meet. The goal is consistent: keep SaaS services stable, secure and recoverable.</p></div>
+<article class="spotlight reveal"><div class="spotlight-side"><div class="eyebrow">Current role</div><h3>Cloud Operations<br>Engineer</h3><div class="company">Zoho Corporation · Chennai</div><div class="date">March 2025 — Present</div></div><div class="spotlight-main"><p>Operate large-scale production infrastructure across physical and KVM-based environments, supporting high-availability SaaS systems and responding to issues through structured on-call and incident-management practices.</p><div class="responsibilities">
+<div class="responsibility"><b>Linux at scale</b><p>Operate 20,000+ Debian and FreeBSD servers with focus on availability, scalability and performance.</p></div><div class="responsibility"><b>Virtual infrastructure</b><p>Manage KVM environments for SaaS deployments and efficient compute resource use.</p></div><div class="responsibility"><b>Traffic engineering</b><p>Operate Nginx at L7 and Keepalived, IPVS and ECMP at L4 for resilient high-traffic services.</p></div><div class="responsibility"><b>Network operations</b><p>Control ingress and egress traffic and coordinate with NOC teams during performance issues and incidents.</p></div><div class="responsibility"><b>Security &amp; DNS</b><p>Manage SSL/TLS offloading, certificate lifecycle and core NS, A, CNAME, TXT, MX and PTR records.</p></div><div class="responsibility"><b>Automation &amp; standards</b><p>Use Puppet and Foreman to enforce consistent configuration, compliance and infrastructure standards.</p></div><div class="responsibility"><b>Data services</b><p>Deploy and operate two-node and three-node MySQL clusters, active-active DR replicas and Redis clusters.</p></div><div class="responsibility"><b>Resilience &amp; knowledge</b><p>Contribute to DR runbooks and drills; document practices in Confluence and collaborate through SDP ticketing.</p></div>
+</div></div></article>
+<article class="spotlight reveal" style="margin-top:22px"><div class="spotlight-side"><div class="eyebrow">Previous role</div><h3>Project<br>Engineer</h3><div class="company">Tabtree IT Consulting · Chennai</div><div class="date">June 2023 — February 2025</div></div><div class="spotlight-main"><p>Built secure and scalable application environments across cloud and local infrastructure, with ownership spanning CI/CD, container optimization, observability, security and Linux operations.</p><div class="responsibilities">
+<div class="responsibility"><b>Application environments</b><p>Set up development, staging and production environments across cloud and local servers.</p></div><div class="responsibility"><b>Nginx &amp; SSL</b><p>Engineered Nginx reverse-proxy configurations and integrated SSL for secure application delivery.</p></div><div class="responsibility"><b>CI/CD automation</b><p>Automated build and deployment pipelines with GitHub Actions to shorten deployment cycles.</p></div><div class="responsibility"><b>GitHub platform security</b><p>Migrated projects from GitLab to GitHub Enterprise and implemented IP restrictions, branch protection and GitHub Advanced Security.</p></div><div class="responsibility"><b>Code &amp; dependency security</b><p>Integrated SonarQube and OWASP scanning and hardened cloud environments using WAF controls.</p></div><div class="responsibility"><b>Observability at scale</b><p>Monitored 200+ servers with Prometheus and Grafana, created alerts and supported downtime management.</p></div><div class="responsibility"><b>Container optimization</b><p>Reduced container image sizes by 80% using multi-stage Docker builds, improving deployment and resource efficiency.</p></div><div class="responsibility"><b>Linux automation &amp; hardening</b><p>Automated backups, updates and maintenance with Bash; managed users, permissions, processes, UFW, iptables and SSH security.</p></div>
+</div></div></article></section>
 
+<section id="expertise"><div class="section-head reveal"><div><div class="eyebrow">02 / Core skills</div><h2>Skills built for<br>modern operations.</h2></div><p>A focused view of the platforms and tools most relevant to Cloud, SRE and DevOps positions.</p></div><div class="depth-grid">
+<article class="depth-card reveal"><span class="num">01 / AWS</span><h3>AWS cloud<br>services</h3><p>Cloud compute, containers, serverless workloads, managed Kubernetes, identity, networking and load balancing.</p><div class="tool-list"><span>EC2</span><span>ECS</span><span>Fargate</span><span>Lambda</span><span>EKS</span><span>IAM</span><span>VPC</span><span>ALB/NLB</span></div></article>
+<article class="depth-card reveal"><span class="num">02 / CONTAINERS</span><h3>Containers &amp;<br>orchestration</h3><p>Building, optimizing and operating containerized applications and Kubernetes workloads.</p><div class="tool-list"><span>Docker</span><span>Multi-stage builds</span><span>Docker Compose</span><span>Kubernetes</span></div></article>
+<article class="depth-card reveal"><span class="num">03 / CI/CD &amp; SECURITY</span><h3>Delivery &amp;<br>code security</h3><p>Automated delivery workflows, source-control governance and continuous code-quality checks.</p><div class="tool-list"><span>GitHub Actions</span><span>GitHub Enterprise</span><span>SonarQube</span><span>GitHub Advanced Security</span></div></article>
+<article class="depth-card reveal"><span class="num">04 / MONITORING</span><h3>Observability &amp;<br>alerting</h3><p>Infrastructure monitoring, dashboards and alerting for service visibility and faster incident detection.</p><div class="tool-list"><span>Prometheus</span><span>Grafana</span><span>Alerting</span></div></article>
+<article class="depth-card reveal"><span class="num">05 / LINUX &amp; WEB</span><h3>Systems &amp;<br>web infrastructure</h3><p>Linux administration, automation, secure web delivery, host firewalls and remote-access hardening.</p><div class="tool-list"><span>Debian</span><span>FreeBSD</span><span>Bash</span><span>Nginx</span><span>SSL/TLS</span><span>UFW</span><span>iptables</span></div></article>
+<article class="depth-card reveal"><span class="num">06 / CLOUD OPERATIONS</span><h3>Reliability &amp;<br>production support</h3><p>Production operations across incident response, availability, disaster recovery, virtualization and DNS.</p><div class="tool-list"><span>On-call support</span><span>Incident management</span><span>HA</span><span>DR</span><span>KVM</span><span>DNS</span></div></article>
+</div></section>
 
-	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
-		<div class="container d-flex align-items-center justify-content-between">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-	
-			<div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Skills</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
-				</ul>
-			</div>
-	
-			<!-- Separate div for text that appears on mobile -->
-			<div class="d-lg-none mx-auto text-center" style="color: black; font-weight: bold;">
-				<strong style="margin-left: -20px;">Dive Into My Portfolio!</strong>
-			</div>
-		</div>
-	</nav>
+<section id="incidents"><div class="section-head reveal"><div><div class="eyebrow">03 / On-call &amp; incidents</div><h2>Calm decisions<br>under pressure.</h2></div><p>Incident response means reducing impact, building a clear picture and leaving the system easier to support next time.</p></div><div class="incident"><article class="incident-card featured reveal"><div class="eyebrow">Operational approach</div><h3>From signal to stable service</h3><p>I start with impact and recent change, collect evidence across system and network layers, coordinate with the right teams, restore service safely, then capture what we learned.</p><div class="flow"><div>Detect</div><div>Triage</div><div>Recover</div><div>Learn</div></div></article><article class="incident-card reveal"><div class="eyebrow">What I bring</div><h3>Production ownership</h3><p>Work with load balancers, DNS, certificates, virtual infrastructure and clustered data services gives me the context to follow an incident across layers.</p><div class="tool-list"><span>Impact assessment</span><span>Log analysis</span><span>Network checks</span><span>Cross-team coordination</span><span>Runbooks</span><span>Post-incident documentation</span></div></article></div></section>
 
-
-
-
-	<section class="site-hero" style="background-image: url(images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5">
-
-					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Sunderasen</strong></h1>
-					<strong class="d-block text-white text-uppercase letter-spacing">Cloud Operations Engineer</strong>
-
-				</div>
-			</div>
-		</div>
-	</section> <!-- section -->
-	<section class="site-section" id="section-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading text-center col-md-12">
-					<h2>Featured <strong>Skills</strong></h2>
-				</div>
-			</div>
-			<div class="filters">
-				<ul>
-					<li class="active" data-filter="*">All</li>
-					<li data-filter=".packaging">Cloud-Providers</li>
-					<li data-filter=".mockup">CI-CD</li>
-					<li data-filter=".typography">Containerization</li>
-					<li data-filter=".photography">Scripting</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="single-portfolio col-sm-4 all mockup">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bx-cog icon-large'></i>
-								  </div>
-							
-							</div>
-							<!--<a href="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" class="img-pop-up">  -->
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                  
-						</div>
-						<div class="p-inner">
-							<h4>Jenkins Ci and Pipelines</h4>
-							<div class="cat">CI-CD</div>
-						</div>                                         
-					</div>
-					<div class="single-portfolio col-sm-4 all mockup">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bxl-github icon-large'></i>
-								  </div>
-							</div>
-							<!--<a href="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" class="img-pop-up">  --> 
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                  
-						</div>
-						<div class="p-inner">
-							<h4>Github-Actions</h4>
-							<div class="cat">CI-CD</div>
-						</div>                                         
-					</div>                            
-					<div class="single-portfolio col-sm-4 all packaging">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bxl-amazon icon-large'></i>
-								  </div>							</div>
-							<!--<a href="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" class="img-pop-up">  -->  
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a> 
-
-						</div>
-						<div class="p-inner">
-							<h4>Amazon Web Services</h4>
-							<div class="cat">Cloud-Providers</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all packaging">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bxl-digitalocean icon-large'></i>
-								  </div>
-							</div>
-							<!--<a href="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" class="img-pop-up">  -->  
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div> 
-						<div class="p-inner">
-							<h4>Digital Ocean</h4>
-							<div class="cat">Cloud-Providers</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all typography">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bxl-docker icon-large'></i>
-								  </div>
-							</div>
-							
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div>
-						<div class="p-inner">
-							<h4>Docker-Dockerhub</h4>
-							<div class="cat">Containerization</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all photography">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='bx bxl-python icon-large'></i>
-								  </div>							
-								</div>
-							  
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div>
-						<div class="p-inner">
-							<h4>Python-Scripting</h4>
-							<div class="cat">Scripting</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all photography">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='fab fa-linux' style="font-size: 4rem; color: #4CAF50";></i>
-								  </div>							
-								</div>
-							
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div>
-						<div class="p-inner">
-							<h4>Shell-Scripting</h4>
-							<div class="cat">Scripting</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all ">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='fas fa-terminal' style="font-size: 4rem; color: #4CAF50";></i>
-								  </div>							
-								</div>
-							
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div>
-						<div class="p-inner">
-							<h4>Ansible</h4>
-							<div class="cat">Configuration-management</div>
-						</div>
-					</div>
-					<div class="single-portfolio col-sm-4 all ">
-						<div class="relative">
-							<div class="thumb">
-								<div class="overlay overlay-bg"></div>
-								<div class="icon-container">
-									<i class='fas fa-bullseye' style="font-size: 4rem; color: #4CAF50";></i>
-								  </div>							
-								</div>
-							
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>                                
-						</div>
-						<div class="p-inner">
-							<h4>Prometheus-Grafana</h4>
-							<div class="cat">Alerting and monitoring</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- .section -->
-	<section class="site-section " id="section-resume">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>My <strong>Resume</strong></h2>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="mb-5">Education</h2>
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> July 2020 - June 2023</span>
-						<h3>Bachelor in Computer Science</h3>
-						<p>Coursework: Computer Architecture, Artificial Intelligence, Comparison of Learning Algorithms, Operating Systems, Computer Networks, and Software Engineering.</p>
-						<span class="school">Madras University</span>
-					</div>
-
-
-
-				</div>
-				<div class="col-md-6">
-
-
-					<h2 class="mb-5">Experience</h2>
-
-					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> June 2023 - Present</span>
-						<h3>Project Engineer</h3>
-						<p>Configured MERN environments with Nginx and SSL; implemented GitHub Actions CI/CD and security measures. Automated backups and monitored 20+ servers using Prometheus and Grafana.
-						</p>
-						<span class="school">Tabtree Software solutions.</span>
-					</div>
-
-
-
-
-				</div>
-			</div>
-		</div>
-	</section> <!-- .section -->
-
-	<section class="site-section" id="section-about">
-		<div class="container">
-			<div class="row mb-5 align-items-center">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-					<img src="images/2648939.jpg" alt="Image placeholder" class="img-fluid">
-				</div>
-				<div class="col-lg-5 pl-lg-5">
-					<div class="section-heading">
-						<h2>About <strong>Me</strong></h2>
-					</div>
-					<p class="lead">I'm a dedicated Cloud Ops Engineer with a passion for technology and problem-solving. With experience in Linux, AWS, Docker, and automation tools like Ansible and Git, I focus on creating efficient, scalable systems.</p>
-					<p class="lead">I enjoy working with cloud and server environments, building CI/CD pipelines, and continuously improving operations. My goal is to stay adaptable, learn new skills, and contribute to impactful projects in the tech industry.</p>
-	
-					<p>
-						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm" onclick="openPDF()">View Resume</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<script>
-		function openPDF() {
-			window.open('Sunderasen_Resume.pdf', '_blank');
-		}
-	</script>
-	
-	<section class="site-section" id="section-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5">
-					<div class="section-heading text-center">
-						<h2>Get <strong>In Touch</strong></h2>
-					</div>
-				</div>
-
-				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="https://formspree.io/f/mdkoavoa"
-					method="POST"
-					enctype="multipart/form-data" class="site-form">
-						<h3 class="mb-5">Get In Touch</h3>
-						<div class="form-group">
-							<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="tel"  name="Phone" class="form-control px-3 py-4" placeholder="Your Phone">
-						</div>
-						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4"cols="30" rows="10" name="Message" placeholder="Write a Message"></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
-						</div>
-					</form>
-				</div>
-				<div class="col-md-5 pl-md-5">
-					<h3 class="mb-5">My Contact Details</h3>
-					<ul class="site-contact-details">
-						<li>
-							<span class="text-uppercase">Email</span>
-							sunderasen11@outlook.com
-						</li>
-						<li>
-							<span class="text-uppercase">Phone</span>
-							+91 9790869295
-						</li>
-						<li>
-							<span class="text-uppercase">Address</span>
-							Thiruvottiyur <br>
-							Chennai - 600019.
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<footer class="site-footer">
-		<div class="container">
-
-			<div class="row mb-5">
-				<p class="col-12 text-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					 &copy; <script>document.write(new Date().getFullYear());</script> sunderasen | All rights reserved 
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
-			</div>
-			
-			<div class="row mb-5">
-				<div class="col-md-12 text-center">
-					<p>
-						<a href="https://github.com/Sunderasen" class="social-item" onclick="window.open('https://github.com/Sunderasen', '_blank'); return false;"><i class="fab fa-github"></i></a>
-						<a href="https://www.instagram.com/sunder_sparky/" class="social-item" onclick="window.open('https://www.instagram.com/sunder_sparky/', '_blank'); return false;"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.linkedin.com/in/sunderasen2002" class="social-item" onclick="window.open('https://www.linkedin.com/in/sunderasen2002', '_blank'); return false;"><i class="fab fa-linkedin"></i></a>
-					</p>
-				</div>
-			</div>
-			
-		</div>
-	</footer>
-
-
-
-
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/vendor/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-
-	<script src="js/vendor/jquery.easing.1.3.js"></script>
-
-	<script src="js/vendor/jquery.stellar.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>
-
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="js/custom.js"></script>
-
-	<!-- Google Map -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    	<script src="js/google-map.js"></script> -->
-
-    </body>
-    </html>
+<section id="about"><div class="about reveal"><div><div class="eyebrow">04 / Professional profile</div><h2>Production experience.<br>Reliability mindset.</h2></div><div class="about-copy"><p>I’m a Cloud Operations Engineer from Chennai with a systems mindset: understand the path, test assumptions, collect evidence and fix the real failure point. My experience spans application infrastructure, large-scale Linux estates and production reliability.</p><p>I am targeting Cloud Operations, SRE and DevOps roles where I can apply this production background to availability, automation, infrastructure and incident response.</p><div class="principles"><div class="principle"><b>Evidence over guesses</b><p>Use logs, metrics and system state to narrow the problem.</p></div><div class="principle"><b>Recovery with control</b><p>Reduce impact without creating a second incident.</p></div><div class="principle"><b>Document the lesson</b><p>Turn one fix into shared operational knowledge.</p></div></div><div class="education"><strong>Bachelor’s in Computer Science</strong><br><span>University of Madras · 2020–2023</span></div></div></div></section>
+<section class="contact" id="contact"><div class="eyebrow">05 / Career opportunities</div><h2>Looking for your next Cloud, SRE or DevOps engineer?</h2><p>I’m open to roles where production operations, reliability and strong troubleshooting matter.</p><div class="contact-actions"><a class="btn primary" href="mailto:sunderasen.p@zohomail.in?subject=Career%20Opportunity">Discuss an opportunity ↗</a><a class="btn" href="https://sunderasen.github.io/Sunderasen_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume ↗</a><a class="btn" href="https://www.linkedin.com/in/sunderasen2002/" target="_blank" rel="noopener noreferrer">View LinkedIn ↗</a><a class="btn" href="https://github.com/Sunderasen" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></div><a class="email-link" href="mailto:sunderasen.p@zohomail.in">sunderasen.p@zohomail.in</a></section>
+<footer><span>© <span id="year">2026</span> Sunderasen</span><span>Cloud Operations · SRE · DevOps</span></footer>
+</div></main>
+<script>
+const menuButton=document.querySelector('.menu'),navigation=document.querySelector('.nav-links'),themeButton=document.getElementById('theme-toggle'),themeMeta=document.querySelector('meta[name="theme-color"]');function syncThemeLabel(){const light=document.documentElement.dataset.theme==='light';themeButton.setAttribute('aria-label',light?'Switch to dark theme':'Switch to light theme');themeMeta.setAttribute('content',light?'#f7f8f5':'#0a0d0c')}syncThemeLabel();themeButton.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=next;try{localStorage.setItem('sunderasen-theme',next)}catch(e){}syncThemeLabel()});menuButton.addEventListener('click',()=>{const open=navigation.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open))});navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navigation.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));document.getElementById('year').textContent=new Date().getFullYear();const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
+</script>
+</body></html>
